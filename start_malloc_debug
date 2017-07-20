@@ -1,0 +1,7 @@
+#! /bin/bash
+
+adb root
+adb shell stop
+adb shell setprop libc.debug.malloc.options "\"backtrace guard fill\""
+adb shell start
+
